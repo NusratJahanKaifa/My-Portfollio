@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nusrat Jahan - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        overflow-x: hidden;
+        font-family: Arial, sans-serif;
+    }
+    /* Navbar */
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .navbar-brand {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .nav-link {
+        margin-left: 8px;
+    }
+    /* Hero */
+    .hero-image {
+        border: 4px solid #f1f1f1;
+    }
+
+    h1 {
+        font-size: 42px;
+        font-weight: 600;
+    }
+    h3 {
+        color: #0d6efd;
+        font-size: 24px;
+        margin: 15px 0;
+    }
+    /* Section headings */
+    section h2 {
+        font-weight: 600;
+        margin-bottom: 30px !important;
+    }
+   /* Skills */
+#skills {
+    background: #f8f9fa;
+}
+#skills .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    transition: 0.3s;
+}
+#skills .card:hover {
+    transform: translateY(-5px);
+    border-color: #0d6efd;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+#skills .skill-logo {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    margin: 0 auto 12px;
+}
+#skills h4 {
+    color: #0d6efd;
+    font-weight: 600;
+}
+#skills p {
+    color: #6c757d;
+    font-size: 15px;
+}
+     /* Education */
+#education {
+    background: #ffffff;
+}
+#education .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    transition: 0.3s;
+}
+#education .card:hover {
+    transform: translateY(-5px);
+    border-color: #0d6efd;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+/* Education */
+#education {
+    background: #ffffff;
+}
+#education .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    transition: 0.3s;
+}
+#education .card:hover {
+    transform: translateY(-5px);
+    border-color: #0d6efd;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+/* Education Logo */
+#education .education-logo {
+    font-size: 30px;
+    color: #0d6efd;
+    margin-bottom: 10px;
+}
+#education h4 {
+    color: #0d6efd;
+    font-weight: 600;
+    font-size: 20px;
+}
+#education p {
+    color: #6c757d;
+}
+    /* Projects */
+    #projects .card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        height: 100%;
+    }
+    #projects .card-img-top {
+        height: 180px;
+        object-fit: cover;
+    }
+    #projects .card-title {
+        font-weight: 600;
+    }
+    /* Buttons */
+    .btn {
+        border-radius: 5px;
+    }
+    /* Contact */
+    #contact .card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+    }
+    #contact form {
+        background: white;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+    }
+    .form-control {
+        border-radius: 5px;
+    }
+    /* Footer */
+    footer {
+        padding: 18px 0 !important;
+    }
+    /* Mobile */
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 32px;
+        }
+        h3 {
+            font-size: 21px;
+        }
+        .hero-image {
+            margin-top: 30px;
+            max-width: 250px !important;
+        }
+    }
+</style>
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="logo.jpg" alt="Nusrat Logo" width="45" height="45" class="rounded-circle me-2">
+        <span>Nusrat Jahan Kaifa</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+<div class="collapse navbar-collapse" id="menu">
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+        </li>
+    </ul>
+</div>
+</div>
+</nav>
+    <!-- Hero Section -->
+<section class="py-5">
+    <div class="container">
+    <div class="row align-items-center">
+    <div class="col-md-6">
+        <h1>Hello, I'm Nusrat Jahan Kaifa</h1>
+        <h3>Computer Science & Engineering Student</h3>
+        <p>
+            I am a Computer Science and Engineering student
+            learning programming and web development.
+            I am interested in building useful projects
+            and learning new technologies.
+        </p>
+        <a href="#contact" class="btn btn-primary"> Contact Me </a>
+    </div>
+    <div class="col-md-6 text-center">
+        <img src="profile.jpeg" alt="Nusrat Jahan" class="img-fluid rounded-circle hero-image" style="max-width: 300px;">
+    </div>
+</div>
+</div>
+</section>
+    <!-- About Section -->
+<section id="about" class="py-5 bg-light">
+    <div class="container">
+    <h2 class="text-center mb-4"> About Me </h2>
+    <div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+        <p>
+            I am a Computer Science and Engineering student
+            at Gausul Azam Maizbhandari Polytechnic Institute.
+            I enjoy learning programming and creating websites.
+            I am also interested in machine learning,
+            web development and new technologies.
+        </p>
+    </div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section id="skills" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-2"> My Skills </h2>
+        <p class="text-center text-muted mb-5">
+            Technologies and tools I am learning and working with
+        </p>
+        <div class="row g-4">
+            <!-- HTML -->
+        <div class="col-md-4">
+        <div class="card text-center p-4 h-100">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="skill-logo">
+            <h4>HTML</h4>
+            <p>
+                I can create the basic structure
+                of a website.
+            </p>
+        </div>
+        </div>
+            <!-- CSS -->
+        <div class="col-md-4">
+        <div class="card text-center p-4 h-100">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="skill-logo">
+        <h4>CSS</h4>
+        <p>
+            I can design and style web pages.
+        </p>
+            </div>
+        </div>
+            <!-- Bootstrap -->
+        <div class="col-md-4">
+        <div class="card text-center p-4 h-100">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="skill-logo">
+        <h4>Bootstrap</h4>
+        <p>
+            I can build responsive websites
+            using Bootstrap.
+        </p>
+            </div>
+        </div>
+            <!-- JavaScript -->
+        <div class="col-md-4">
+        <div class="card text-center p-4 h-100">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-logo">
+        <h4>JavaScript</h4>
+        <p>
+            I am learning JavaScript for
+            interactive websites.
+        </p>
+            </div>
+        </div>
+            <!-- Python -->
+        <div class="col-md-4">
+        <div class="card text-center p-4 h-100">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="skill-logo">
+        <h4>Python</h4>
+        <p>
+            I use Python for programming
+            and problem solving.
+        </p>
+            </div>
+        </div>
+            <!-- MySQL -->
+        <div class="col-md-4">
+        <div class="card text-center p-4 h-100">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="skill-logo" >
+        <h4>MySQL</h4>
+        <p>
+            I am learning database management
+            with MySQL.
+        </p>
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+    <!-- Education Section -->
+<section id="education" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-2">Education</h2>
+        <p class="text-center text-muted mb-5"> My academic background </p>
+        <div class="row g-4">
+            <!-- Diploma -->
+        <div class="col-md-6">
+        <div class="card text-center p-4 h-100">
+            <i class="bi bi-mortarboard-fill education-logo"></i>
+            <h4>
+                Diploma in Computer Science & Engineering
+            </h4>
+            <p class="text-primary">
+                Diploma in Engineering
+            </p>
+            <p>
+                Currently studying Computer Science
+                & Engineering.
+            </p>
+        </div>
+    </div>
+            <!-- SSC -->
+        <div class="col-md-6">
+        <div class="card text-center p-4 h-100">
+            <i class="bi bi-book-fill education-logo"></i>
+            <h4>
+                Secondary School Certificate (SSC)
+            </h4>
+            <p class="text-primary">
+                Secondary Education
+            </p>
+            <p>
+                Completed my secondary school education.
+            </p>
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+    <!-- Projects Section -->
+<section id="projects" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">My Projects</h2>
+        <div class="row g-4">
+            <!-- Project 1 -->
+        <div class="col-md-4">
+        <div class="card h-100">
+            <img src="project1.png" class="card-img-top" alt="Calculator Project" style="height: 180px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Calculator</h5>
+                    <p class="card-text">
+                        A simple calculator project with
+                        basic mathematical operations.
+                    </p>
+                    <a href="calculator/src/calculator.html" class="btn btn-primary"> View Project</a>
+                </div>
+            </div>
+        </div>
+            <!-- Project 2 -->
+        <div class="col-md-4">
+        <div class="card h-100">
+            <img src="project2.jpeg" class="card-img-top" alt="BlogSphere Project" style="height: 180px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">BlogSphere</h5>
+                    <p class="card-text">
+                        A simple blog website where users
+                        can create an account and share
+                        their ideas.
+                    </p>
+                    <a href="Blog Website - Final/src/blog.html" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+            <!-- Project 3 -->
+        <div class="col-md-4">
+        <div class="card h-100">
+            <img src="project3.jpeg" class="card-img-top" alt="Login Registration and Post System" style="height: 180px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title">Login, Registration & Post System</h5>
+                <p class="card-text">
+                    A web-based system where users can
+                    register, login and create, edit,
+                    delete and view posts.
+                </p>
+                <a href="Blog Website - Final/src/posts.html" class="btn btn-primary">View Project</a>
+            </div>
+        </div>
+    </div>
+            <!-- Project 4 -->
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="project4.png" class="card-img-top" alt="Food Recipes Website" style="height: 180px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Food Recipes Website</h5>
+                    <p class="card-text">
+                        A website where users can explore
+                        different food recipes.
+                    </p>
+                    <a href="WDD Food Recipes Project/src/foodrecipes.html" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+            <!-- Project 5 -->
+        <div class="col-md-4">
+        <div class="card h-100">
+            <img src="project5.png" class="card-img-top" alt="APPNextIT Services Website" style="height: 180px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title">
+                    APPNextIT Services Website
+                </h5>
+                <p class="card-text">
+                    A static website designed to showcase
+                    IT services and company information.
+                </p>
+                <a href="WDDAppnextIt/appnextITservices.html" class="btn btn-primary">View Project</a>
+            </div>
+        </div>
+    </div>
+            <!-- Project 6 -->
+        <div class="col-md-4">
+        <div class="card h-100">
+            <img src="project6.png" class="card-img-top" alt="Task Manager"style="height: 180px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title">Task Manager</h5>
+                <p class="card-text">
+                    A simple task management application
+                    for adding, managing and completing
+                    daily tasks.
+                </p>
+                <a href="task/src/task.html" class="btn btn-primary">View Project</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+    <!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Me</h2>
+        <div class="row justify-content-center">
+        <div class="col-md-8">
+                <!-- Contact Information -->
+            <div class="card p-4 mb-4">
+                <h4 class="text-center mb-3">Get In Touch</h4>
+                <p class="text-center">
+                    <strong>Email:</strong>
+                    <a href="mailto:nusratkaifa15@gmail.com">nusratkaifa15@gmail.com</a>
+                </p>
+                <div class="text-center">
+                    <a href="https://github.com/NusratJahanKaifa" target="_blank"class="btn btn-dark me-2">GitHub</a>
+                    <a href="https://www.linkedin.com/in/nusrat-jahan-kaifa-4a10723b1/" target="_blank" class="btn btn-primary">LinkedIn</a>
+                </div>
+            </div>
+                <!-- Contact Form -->
+            <form onsubmit="sendMessage(event)">
+                <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <input type="text"class="form-control"placeholder="Enter your name"required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control"placeholder="Enter your email"required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-control" rows="5" placeholder="Write your message" required></textarea>
+                </div>
+                <button type="submit"class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+        </div>
+    </div>
+</section>
+    <!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">
+        © 2026 Nusrat Jahan. All Rights Reserved.
+    </p>
+</footer>
+    <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+<!-- Contact Form JavaScript -->
+<script>
+    function sendMessage(event) {
+        event.preventDefault();
+        alert("Thank you! Your message has been sent successfully.");
+        event.target.reset();
+    }
+</script>
+</body>
+</html>

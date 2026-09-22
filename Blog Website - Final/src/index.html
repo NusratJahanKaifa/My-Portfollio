@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+
+  <style>
+    .hide{
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="bg-amber-100 flex justify-center items-center min-h-screen gap-6">
+
+<!-- Login Section -->
+<div id="Loginsection" class="bg-white p-6 rounded-xl shadow-xl w-80 text-center">
+
+<section>
+
+<h1 class="font-bold text-4xl mb-5">Login System</h1>
+
+<input type="text" id="UserName" placeholder="Enter Username" class="w-full border p-3 mb-3 rounded-lg">
+<input type="password" id="UserPassword" placeholder="Enter Password" class="w-full border p-3 mb-4 rounded-lg">
+
+<button onclick="UserLogin()"class="bg-green-500 hover:bg-green-600 text-white py-2 px-6 rounded-lg w-full">Login</button>
+<h1>not an user yet? <a href="register.html">Register</a></h1>
+</section>
+</div>
+
+<!-- Post Section -->
+<div  id="Postsection" class="bg-white p-6 rounded-xl shadow-xl w-96 text-center">
+<section>
+
+<h2 class="font-bold text-3xl mb-4">Post Section</h2>
+<h3 id="showuser" class="font-bold text-2xl text-blue-600 mb-4"></h3>
+
+<input type="text" id="postInput" placeholder="Write post title" class="w-full border p-3 mb-3 rounded-lg">
+
+<textarea id="textfield" placeholder="Write your content..." class="w-full border p-3 mb-4 rounded-lg h-32"></textarea>
+<div class="flex gap-2">
+
+<button onclick="post()" class="bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg w-full">Post</button>
+
+<button onclick="UserLogout()" class="bg-amber-500 hover:bg-red-600 text-white py-2 rounded-lg w-full">Logout</button>
+
+</div>
+</section>
+</div>
+
+<script>
+
+let showUser = document.getElementById('showuser')
+let Postsection = document.getElementById('Postsection')
+Postsection.classList.add('hide')
+
+function UserLogin(){
+
+    let Username = 'Herry'
+    let Password = 1430
+    let inputUser = document.getElementById('UserName').value
+    let inputPassword = document.getElementById('UserPassword').value
+    if(inputUser == Username && inputPassword == Password){
+    Loginsection.classList.add('hide')  
+    Postsection.classList.remove('hide')
+    }
+}
+
+function UserLogout(){
+    Loginsection.classList.remove('hide')
+    Postsection.classList.add('hide')
+}
+
+function post(){
+
+    let Inputpost = document.getElementById('postInput').value
+    let content = document.getElementById('textfield').value
+    let Postpage = document.getElementById('Postsection')
+
+    let h1 = document.createElement('h1')
+    let p = document.createElement('p')
+
+    h1.classList.add('font-bold','text-xl','mt-4')
+    p.classList.add('bg-gray-100','p-3','rounded-lg','mb-3')
+
+    h1.innerHTML = Inputpost
+    p.innerHTML = content
+
+    Postpage.appendChild(h1)
+    Postpage.appendChild(p)
+}
+
+</script>
+</body>
+</html>

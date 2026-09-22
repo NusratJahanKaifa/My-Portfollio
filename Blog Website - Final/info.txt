@@ -1,0 +1,9 @@
+
+The Natural Beauty of Bangladesh...
+Sajek Valley is an emerging tourist spot in Bangladesh
+situated among the hills of the Kasalong range of mountains
+in Sajek union, Baghaichhari Upazila in Rangamati District, Chittagong.
+
+Delete button function criteria:
+
+first a fetchpost function a delete button create krte hbe,,arpor event handler diye delete function create krte hbe .

@@ -1,0 +1,48 @@
+npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+
+npm-->node package manager
+UTF-->Unicode transformation Format
+Theory of tailwindcss
+
+tailwind one kind of package,,ja install orbo npm tha package hisebe dore nei,computer
+programming language buje na,computer binary (0,1) bujte pare.ty amra ja code liki tha 
+compiled hoye source code tke machine code a translate hoi.
+npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch 
+ai code ta muloto kaj kore amra tailwind a je shortcut liki tar meanings bujai,mane mt 
+likle seta automatically margin top hisebe dore nei.
+tailwindcss ar class goloke compiler raw css a convert kore.
+
+
+Making Calculator:
+<!DOCTYPE html>
+<head>
+<body class=" flex justify-center items-start min-h-screen pt-10">
+<div class=" p-6 rounded-lg shadow-lg w-80 text-center">
+<h1 class="text-3xl font-bold "> Calculator </h1>
+<h2  id="result" class=" font-bold "> 0 </h2>            
+<input type="number" id="num1">
+<input type="number" id="num2">
+<button onclick= "Calculate('Sum')" > Summation </button>
+<button onclick= "Calculate('Subtract')" > Subtraction </button>
+<button onclick= "Calculate('Divide')" > Divition </button>
+<button onclick= "Calculate('Multiply')" > Multipication </button>
+</div>
+<script>
+    function Calculate(type){
+    let num1 = parseInt(document.getElementById("num1").value); // parse int ar kaj hocce input box a je data likbo tha string data setake int a anar jonno parseint use krte hoi
+    let num2 = parseInt(document.getElementById("num2").value);  // initialy value 0 dekar jonno 
+    let result = document.getElementById("result");
+if(type == 'Sum'){
+    result.innerHTML = (num1 + num2)}
+else if ( type == 'Subtract'){
+    result.innerHTML = (num1 - num2)}
+else if ( type == 'Divide'){
+    result.innerHTML = (num1 / num2)}
+else{
+    result.innerHTML = (num1 * num2)
+}
+}
+</script>
+</body>
+</head>
+</html>

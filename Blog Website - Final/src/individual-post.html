@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Details | NatureSphere</title>
+
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-amber-100 to-orange-100 min-h-screen">
+    <!-- ================= NAVBAR ================= -->
+
+<nav class="bg-white shadow-md sticky top-0">
+    <div class="max-w-7xl mx-auto px-6">
+    <div class="flex justify-between items-center h-16">
+        <a href="blog.html" class="text-3xl font-bold text-green-500">NatureSphere
+        </a>
+        <a href="blog.html"class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-lg">
+        ← Back
+        </a>
+        </div>
+    </div>
+</nav>
+    <!-- ================= BLOG DETAILS ================= -->
+
+<main class="max-w-5xl mx-auto px-5 py-10">
+    <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+        <img id="postImage"src="" class="w-full h-80 object-cover">
+        <div class="p-8">
+        <h1 id="postTitle" class="text-4xl font-bold text-gray-800 mb-4">
+        </h1>
+        <div class="flex justify-between text-gray-500 mb-8">
+            <p id="author"></p>
+            <p id="date"></p>
+        </div>
+            <p id="postContent" class="text-lg leading-9 text-gray-700 whitespace-pre-line">
+            </p>
+            <div class="mt-10">
+            <a href="blog.html" class="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg">
+             ← Back to Home
+            </a>
+            </div>
+        </div>
+    </div>
+</main>
+    <!-- ================= FOOTER ================= -->
+
+<footer class="bg-gray-900 text-white mt-16">
+    <div class="max-w-7xl mx-auto px-6 py-8 text-center">
+        <h2 class="text-2xl font-bold text-green-400">NatureSphere</h2>
+        <p class="text-gray-400 mt-2">Share your ideas with the world.
+        </p>
+        <p class="text-gray-500 mt-4">
+            © 2026 NatureSphere. All Rights Reserved.
+        </p>
+    </div>
+</footer>
+<script>
+        let index = localStorage.getItem("viewPostIndex");
+    let posts = JSON.parse(localStorage.getItem("posts")) || [];
+    if (index === null || !posts[index]) {
+        alert("Post not found!");
+        window.location.href = "blog.html";
+    }
+    let post = posts[index];
+    document.getElementById("postTitle").innerText = post.title;
+    document.getElementById("postContent").innerText = post.content;
+    document.getElementById("author").innerText ="👤 " + post.username;
+    document.getElementById("date").innerText ="📅 " + post.date;
+    if (post.image) {
+        document.getElementById("postImage").src = post.image;
+    } else {
+        document.getElementById("postImage").style.display = "none";
+    }
+</script>
+</body>
+</html>

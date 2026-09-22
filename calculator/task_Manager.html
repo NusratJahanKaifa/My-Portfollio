@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="output.css" rel="stylesheet">
+</head>
+<body class=" bg-green-500 flex justify-center items-start min-h-screen pt-10">
+<div class="bg-white p-6 rounded-lg shadow-lg w-80 text-center">
+<h1 class="text-3xl font-bold ">Task Manager</h1>
+<input type="text" id = "EnterValue" class="border p-2 w-full rounded">
+<button onclick="tasktrack()" class="bg-blue-500 text-white px-4 py-2 rounded mt-3 w-full">Add Task</button>
+<ul id="Parentlist" class="mt-4 space-y-2 text-left">
+</ul>
+</div>
+<script>
+    function tasktrack(){
+        let Entertask = document.getElementById('EnterValue').value
+        let listparent = document.getElementById('Parentlist')
+        let list = document.createElement('li')
+        let datelist = document.createElement('li')
+        listparent.appendChild(list)
+        listparent.appendChild(datelist)
+        let date = new Date().toLocaleDateString()
+        datelist.innerHTML = date
+        list.innerHTML = Entertask
+    }
+</script>
+</body>  
+</html>
