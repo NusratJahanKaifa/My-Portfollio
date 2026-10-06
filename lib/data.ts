@@ -100,25 +100,24 @@ export const SKILLS: SkillItem[] = [
 ];
 
 export const PROJECTS: Project[] = [
-  {
-    id: "login-reg-post",
-    title: "Login / Registration / Post System",
-    category: "Web Application",
-    technologies: ["HTML", "CSS", "JavaScript", "LocalStorage"],
-    description:
-      "A responsive client-side authentication and publishing system featuring user signup, password handling, session management, and post creation with persistent browser LocalStorage.",
-    features: [
-      "User registration and login validation",
-      "Session management with LocalStorage",
-      "Interactive post creation, editing, and deletion",
-      "Responsive user interface for mobile and desktop",
-    ],
-    githubUrl:
-      "https://github.com/NusratJahanKaifa/login-registration-system",
-    liveUrl:
-      "https://NusratJahanKaifa.github.io/login-registration-system",
-    badge: "Client-Side Auth",
-  },
+{
+  id: "nature-sphere",
+  title: "Nature Sphere Blog Website",
+  category: "Web",
+  technologies: ["HTML", "CSS", "JavaScript"],
+  description:
+    "A nature-focused blog website with user registration, login, and complete post management features.",
+  features: [
+    "User Registration",
+    "User Login",
+    "Create Post",
+    "Edit Post",
+    "Update Post",
+    "Delete Post",
+  ],
+  githubUrl: "https://github.com/NusratJahanKaifa/Blog-Website",
+  liveUrl: "https://nusratjahankaifa.github.io/Blog-Website/",
+}
 
   {
     id: "food-recipe",
