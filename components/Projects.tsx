@@ -24,28 +24,13 @@ import { PROJECTS, Project } from "@/lib/data";
 function ProjectPreviewImage({ id }: { id: string }) {
   switch (id) {
     case "Blog Website":
-      return (
-        <div className="w-full h-full bg-gradient-to-br from-slate-900 via-slate-950 to-cyan-950/40 p-5 flex flex-col justify-between">
-          <div className="flex items-center justify-between text-cyan-400">
-            <Lock className="w-5 h-5" />
-            <span className="text-[10px] font-mono uppercase tracking-wider bg-cyan-950/80 px-2 py-0.5 rounded border border-cyan-800/40">
-              LocalStorage Auth
-            </span>
-          </div>
-          <div className="space-y-2 my-auto">
-            <div className="h-3 w-3/4 bg-slate-800 rounded animate-pulse" />
-            <div className="h-3 w-1/2 bg-cyan-900/50 rounded" />
-            <div className="p-2 rounded bg-slate-800/60 border border-slate-700/50 flex items-center justify-between">
-              <span className="text-[11px] font-mono text-slate-300">New Post Created</span>
-              <span className="text-[9px] font-mono text-cyan-400">✓ Saved</span>
-            </div>
-          </div>
-          <div className="text-[10px] font-mono text-slate-500 flex items-center justify-between">
-            <span>Session: Active</span>
-            <span>Client State</span>
-          </div>
-        </div>
-      );
+  return (
+    <img
+      src="/blog.jpeg"
+      alt="Nature Sphere Blog Website"
+      className="w-full h-full object-cover"
+    />
+  );
 
     case "food-recipe":
       return (
