@@ -100,18 +100,21 @@ export const SKILLS: SkillItem[] = [
 ];
 
 export const PROJECTS: Project[] = [
-  {
-  id: "Blog Website",
-  title: "Nature Sphere",
-  category: "Web Application",
+
+{
+  id: "nature-sphere",
+  title: "Nature Sphere Blog Website",
+  category: "Web",
   technologies: ["HTML", "CSS", "JavaScript", "LocalStorage"],
   description:
     "A nature-focused blog website with user registration, login, and complete post management features.",
   features: [
-    "User Registration and Login",
-    "Create, Edit, Update and Delete Posts",
-    "Post Management with LocalStorage",
-    "Responsive User Interface",
+    "User Registration",
+    "User Login",
+    "Create Post",
+    "Edit Post",
+    "Update Post",
+    "Delete Post",
   ],
   githubUrl:
     "https://github.com/NusratJahanKaifa/Blog-Website",
@@ -239,4 +242,4 @@ export const EDUCATION_DATA: EducationItem[] = [
       "Practical hands-on lab projects and collaborative technical tasks",
     ],
   },
-];
+]

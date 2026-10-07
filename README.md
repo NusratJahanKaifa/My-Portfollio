@@ -1,4 +1,7 @@
+
 # Nusrat Jahan Kaifa — Developer Portfolio Website
+# Nusrat Jahan Kaifa 
+ Developer Portfolio Website
 
 A modern, responsive developer portfolio website built with **Next.js**, **TypeScript**, **Tailwind CSS**, **Framer Motion**, and **Lucide React**.
 
@@ -66,3 +69,5 @@ This portfolio showcases my skills, projects, education, and developer profile.
 │
 ├── package.json
 └── tsconfig.json
+└── tsconfig.json
+
