@@ -23,15 +23,14 @@ import { PROJECTS, Project } from "@/lib/data";
 // Custom graphical placeholder previews for each project
 function ProjectPreviewImage({ id }: { id: string }) {
   switch (id) {
-    case "Blog Website":
-  return (
+    case "nature-sphere":
+    return (
     <img
       src="/blog.jpeg"
       alt="Nature Sphere Blog Website"
       className="w-full h-full object-cover"
     />
   );
-
     case "food-recipe":
       return (
         <div className="w-full h-full bg-gradient-to-br from-slate-900 via-slate-950 to-amber-950/40 p-5 flex flex-col justify-between">
